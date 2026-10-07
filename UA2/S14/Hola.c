@@ -6,7 +6,7 @@ int main (void){
     int edad;
 
     // Muestra un mensaje -> Entorno listo para la UA2
-    printf("Entorno listo para la unidad 2");
+    printf("Entorno listo para la unidad 2\n");
     // Pide y lee un número entero -> edad = 20
     printf("Digite su edad: ");
     scanf("%d", &edad);

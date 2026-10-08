@@ -25,4 +25,6 @@ int main (void){
     printf("SUBTOTAL: %.2f\n", sub_total);
     printf("I.V.A: %.2f\n", iva);
     printf("TOTAL: %.2f\n", total);
+
+    return 0;
 }

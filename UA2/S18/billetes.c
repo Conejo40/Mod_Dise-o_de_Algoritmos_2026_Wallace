@@ -39,7 +39,8 @@ int main(void){
     
     printf("Billestes de 1000: %d\n", cantidad); //-> 0.
 
-    //fata la ultima linea.
+    //Lo que quede se entrega en monedas -> en monedas 500
+    printf("En monedas: %d\n", resto);
 
     return 0;
 }

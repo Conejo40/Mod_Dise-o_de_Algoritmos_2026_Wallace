@@ -108,7 +108,7 @@ Las capturas de pantalla van en la subcarpeta `capturas/` de cada sesión
 
 | Sesión  | Tema                                         | Qué aprendí |                  Evidencia                   | Estado |
 | :-----: | :------------------------------------------- | :---------- | :------------------------------------------: | :----: |
-|   S14   | Sistemas numéricos                           |             |               [ver](UA2/S14/)                |   ⬜   |
+|   S14   | Sistemas numéricos                           | Apredí a usar sistemas numericos en C.|     [ver](UA2/S14/Evi/S14.png)     |   ⬜   |
 |   S15   | Control de versiones con git y GitHub        |             |               [ver](UA2/S15/)                |   ⬜   |
 |   S16   | Formato de un programa en C y compilación    |             |               [ver](UA2/S16/)                |   ⬜   |
 |   S17   | Variables, constantes y entrada/salida       |             |               [ver](UA2/S17/)                |   ⬜   |

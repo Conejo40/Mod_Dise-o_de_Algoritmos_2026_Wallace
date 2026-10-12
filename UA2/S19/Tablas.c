@@ -21,7 +21,7 @@ int main(void){
             printf("%d x %2d = %2d\n", numero, i, numero * i);
         }
         tablas++; //cuenta la tabla mostrada -> 1 luego 2
-        //siguiente dato al fina del cuero -> 3, luego 0
+        //siguiente dato al final del contador -> 3, luego 0
         printf("Nuemro de la tabla (0 para terminar): ");
         scanf("%d", &numero);
     }

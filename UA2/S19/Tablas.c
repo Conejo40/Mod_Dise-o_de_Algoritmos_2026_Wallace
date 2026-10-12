@@ -22,7 +22,7 @@ int main(void){
         }
         tablas++; //cuenta la tabla mostrada -> 1 luego 2
         //siguiente dato al final del contador -> 3, luego 0
-        printf("Nuemro de la tabla (0 para terminar): ");
+        printf("Número de la tabla (0 para terminar): ");
         scanf("%d", &numero);
     }
     //Despues del while (se digito 0) -> tablas mostradas 2

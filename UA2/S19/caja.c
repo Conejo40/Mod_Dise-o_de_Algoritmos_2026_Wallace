@@ -15,5 +15,7 @@ int main(void){
     
     } while (condition);
     printf("\n1. Agregar 2.Ver total 3.Cobrar 0.Salir\n");
-    printf("Opción: \n");
+    printf("Opción: \n"); 
+
+    return 0;
 }

@@ -5,7 +5,10 @@
 int main(void){
     int filas, col, i;
 
-    for ( filas = 1; filas <= 4 ; filas++){
+    printf("Cantidad de filas: ");
+    scanf("%d", &i);
+
+    for ( filas = 1; filas <= i ; filas++){
         printf("\n");
         for ( col = 1; col <= filas; col++){
             printf("*");
@@ -13,11 +16,12 @@ int main(void){
         
     }
 
-    for (filas = 1; filas <= 4; filas){
-        printf("%d\n", i);
-        for (col = 1; col <= filas; col++){
-           printf("%d", i + 1); 
+    for ( filas = 1; filas <= i ; filas++){
+        printf("\n");
+        for ( col = 1; col <= filas; col++){
+            printf("%d", col);
         }
+        
     }
     
     return 0;

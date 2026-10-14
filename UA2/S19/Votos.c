@@ -1,4 +1,4 @@
-//
+//Votos.c - programa para calcular votos sin saber la cantidad de personas.
 
 #include <stdio.h>
 #include <string.h>

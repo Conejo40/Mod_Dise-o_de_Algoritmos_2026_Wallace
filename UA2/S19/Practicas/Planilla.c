@@ -27,7 +27,7 @@ int main(void){
             if (horas < 0 || horas > 72) {
                 printf("Dato invalido, intente denuevo.\n");
             }
-        }while (horas >= 0 && horas <= 72);
+        }while (horas < 0 || horas > 72);
 
         printf("Tarifa por hora: ");
         scanf("%if", &tarifa);
@@ -38,12 +38,12 @@ int main(void){
             con_extra += 1;
         }
 
-        printf("%s: %f", nombre, pago);
+        printf("%s: %f\n", nombre, pago);
         total_planilla += pago;
         
     }
     
-    printf("Total de la pantilla: %.2f", total_planilla);
+    printf("Total de la pantilla: %.2f\n", total_planilla);
     printf("Personas con horas extra %d", con_extra);
     
 

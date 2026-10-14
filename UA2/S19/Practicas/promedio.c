@@ -17,15 +17,21 @@ int main(void){
             printf("Dato invalido, intente denuevo.\n");
         } else {
            for (i = 1; i <= cantidad; i++){
-                printf("Nota %d: ", i);
+            do{
+                printf("Nota %d (0 a 100): ", i);
                 scanf("%lf", &nota);
-                suma += nota;
+            } while (nota < 0 || nota > 100);
+            
+                
+                if (nota >= 0 && nota <= 100){
+                    suma += nota;
+                }  
             } 
 
             promedio = suma / cantidad;
 
             printf("Suma: %.0f\n", suma);
-            printf("Promedio: %f", promedio);
+            printf("Promedio: %.2f", promedio);
    
         }
         

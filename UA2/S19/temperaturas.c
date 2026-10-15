@@ -79,7 +79,7 @@ int main(void) {
 // Mensaje de gcc: Error de logica, el ciclo solo da 6 vueltas.
 // Correcion: En la condicion de if poner i <= DIAS 32.
 
-//6. Linea 37 
+//7. Linea 37 
 // Mensaje de gcc: Error de logica, el ciclo do while no funciona porque temp dentro del rango se cumple y
 // para que el do while se rompa no tiene que cumplirse la condicion.
 // Correcion: Cambiar los valores del while (temp < MINIMA || temp > MAXIMA);.

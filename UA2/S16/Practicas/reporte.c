@@ -22,11 +22,11 @@ int main(void) {
 // Mensaje de gcc: Error, Printf no se considera una funcion integrada.
 // Correcion: Cambiar la P mayuscula por p minuscula (C es sensible a estas cosas). 
 
-//3. Linea 7
+//4. Linea 7
 // Mensaje de gcc: Error, no se ternino la frase.
 // Correcion: Agregar las comillas dobles a al final.
 
-//3. Linea 6
+//5. Linea 6
 // Mensaje de gcc: Error, falto cerrar las llaves del final de la funcion main.
 // Correcion: Agregar la llave que falta al final de la funcion main.
 //===========================================================================================

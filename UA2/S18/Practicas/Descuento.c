@@ -1,4 +1,4 @@
-/* Descuento.c - es el primer ejercicio de practica de ciclos. */
+/* Descuento.c - es el primer ejercicio de practica de condicionales. */
 
 #include <stdio.h>
 

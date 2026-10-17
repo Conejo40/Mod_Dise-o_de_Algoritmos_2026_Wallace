@@ -19,11 +19,11 @@ int main(void){
     printf("Cuota mensual del crédito: ");
     scanf("%lf", &cuota);
 
-    printf("¿Tiene deudas atrasadas? (S/N): \n");
+    printf("¿Tiene deudas atrasadas? (S/N): ");
     /* fgets(respDeudas, sizeof(respDeudas), stdin);  */     // Sintaxis: fgets(variable, tamaño_máximo, entrada_estándar
     scanf(" %c", &respDeudas);
 
-    printf("Años de antigüedad laboral: \n");
+    printf("Años de antigüedad laboral: ");
     scanf("%d", &antiguedad);
 
     printf("¿Tiene fiador? (S/N): ");
@@ -31,12 +31,10 @@ int main(void){
     scanf(" %c", &respFiador);
 
     capacidadPago = salario >= cuota * 3;
-    tieneDeudas = toupper(respDeudas);    /* Toupper() se usa para poner las minus en mayus. */
-    tieneFiador = toupper(respFiador);
+    tieneDeudas = toupper(respDeudas) == 'S';    /* Toupper() se usa para poner las minus en mayus. */
+    tieneFiador = toupper(respFiador) == 'S';    /* En casos de comparacion char es con comillas simples '' */
     aprobado = capacidadPago && !tieneDeudas && (antiguedad >= 1 || tieneFiador);
 
-    printf("%d", tieneDeudas);
-    printf("%d", tieneFiador);
     if (aprobado){
         printf("Crédito aprobado");
     } else {

@@ -112,8 +112,8 @@ Las capturas de pantalla van en la subcarpeta `capturas/` de cada sesión
 |   S15   | Control de versiones con git y GitHub        | Aprendí a como hacer conversiones del sistema binario, decimal, octal y hexadecimal.|               [ver](UA2/S15/Evi/S15.png)                |   ⬜   |
 |   S16   | Formato de un programa en C y compilación    | Aprendí a utilizar el formato gcc para compilar archivos C.|               [ver](UA2/S16/Evi/S16.png)                |   ⬜   |
 |   S17   | Variables, constantes y entrada/salida       | Aprendí a usar los tipos de variables, su peso, cuando usarlas, a jugar con espacios y decimales y aprendí definir constantes.|               [ver](UA2/S17/Evi/S17.png)                |   ⬜   |
-|   S18   | Operadores, casting e if … else              |             |               [ver](UA2/S18/)                |   ⬜   |
-|   S19   | Ciclos y switch                              |             |               [ver](UA2/S19/)                |   ⬜   |
+|   S18   | Operadores, casting e if … else              | Aprendí a usar los condicionales if, elif y else, los operadores y comparadores, tambien el uso del casting.|               [ver](UA2/S18/Evi/S18.png)                |   ⬜   |
+|   S19   | Ciclos y switch                              | Aprendí a utilizar los ciclos for, while y do while, tambien el switch case para cuando tenemos opciones.|               [ver](UA2/S19/Evi/S19.png)                |   ⬜   |
 |   S20   | Arreglos, matrices y cadenas                 |             |               [ver](UA2/S20/)                |   ⬜   |
 |   S21   | Funciones                                    |             |               [ver](UA2/S21/)                |   ⬜   |
 |   S22   | Paso de parámetros por valor y por dirección |             |               [ver](UA2/S22/)                |   ⬜   |

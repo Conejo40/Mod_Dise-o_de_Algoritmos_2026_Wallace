@@ -21,24 +21,30 @@ int main(void){
     double promedio;
     int i;
 
+
+    printf("=== Calificaciones del estudiante ===\n")
     printf("Nombre del estudiante: ");
     fgets(estudiante, sizeof(estudiante), stdin);
     estudiante[strcspn(estudiante, "\n")] = '\0';
 
+    /* Se hace para guardar las notas en calificaciones. */
     for (i = 0; i < 3; i++){
+            /* Se repite hasta que las calificaciones sean de 0 a 100. */
             do{
                 printf("Clalificacion %d: ", i + 1);
                 scanf("%lf", &calificaciones[i]);
 
-                if(calificaciones[i] < NOTA_MIN && calificaciones[i] > nOTA_MAX){
+                if(calificaciones[i] < NOTA_MIN || calificaciones[i] > nOTA_MAX){
                     printf("Calificacion invalida...\n");
                 }
         
-            } while (calificaciones[i] < NOTA_MIN && calificaciones[i] > nOTA_MAX);
+            } while (calificaciones[i] < NOTA_MIN || calificaciones[i] > nOTA_MAX);
     }
 
+    /* Se calcula el promedio: */
     promedio = (calificaciones[0], calificaciones[1], calificaciones[2]) / 3;
 
+    /* Se valida la condicion del estudiante. */
     if (promedio >= 70 && promedio <= 100){
         printf("Condicion: APROBADO.");
     } else if (promedio >= 60 && promedio < 70){

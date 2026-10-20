@@ -20,6 +20,7 @@ dos decimales y los montos alineados.
     /* Declaracion de variables: */
     char nombre[20];
     double salario_bruto, salario_neto;
+    double desc_caja, desc_iess, renta;
 
     /* Se repite hasta que el nombre sea correcto. */
     do{
@@ -27,8 +28,9 @@ dos decimales y los montos alineados.
         fgets(nombre, sizeof(nombre), stdin);
         nombre[strcspn(nombre, "\n")] = '\0';
 
+        /* Compara el numero de caracteres */
         if(strlen(nombre) == 0){
-            printf("Nombre invalido, no puede haber un nombre vacio.");
+            printf("Nombre invalido, no puede haber un nombre vacio.\n");
         }
     } while (strlen(nombre) == 0);
 
@@ -38,12 +40,32 @@ dos decimales y los montos alineados.
         scanf("%lf", &salario_bruto);
 
         if (salario_bruto < 0){
-            printf("Valor invalido...");
+            printf("Valor invalido...\n");
         }
     } while (salario_bruto < 0);
 
     /* Se cumple si el salario bruto es de 800 o mas. */
-    if (salario_bruto >= 800)
+    if (salario_bruto >= 800){
+        renta = salario_bruto * IMPUESTO_RENTA;
+    } else {
+        renta = 0;
+    }
+
+    /* Calculos de descuentos y salario neto. */
+    desc_caja = salario_bruto * CAJA;
+    desc_iess = salario_bruto * IESS;
+
+    salario_neto = salario_bruto - desc_caja - desc_iess - renta;
+
+    printf("------ COMPROBANTE DE PAGO ------\n");
+    printf("Empledo: \t\t%s\n", nombre);
+    printf("Descuento CAJA (9.5%%): \t%.2f\n", desc_caja);
+    printf("Descuento IESS (2.5%%): \t%.2f\n", desc_iess);
+    printf("Impuesto renta (10%%): \t%.2f\n", renta);
+    printf("Salario neto: \t\t%.2f\n", salario_neto);
+    printf("----------------------------------");
+
+    
     
 
     return 0;

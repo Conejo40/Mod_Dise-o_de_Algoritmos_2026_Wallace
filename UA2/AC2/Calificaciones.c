@@ -1,0 +1,51 @@
+/* 1. Reciba el nombre completo del estudiante.
+2. Reciba tres calificaciones de 0 a 100 y las guarde en un arreglo. Cada calificación fuera de
+rango se rechaza con un mensaje y se vuelve a pedir.
+3. Calcule el promedio de las tres calificaciones y busque la calificación más alta recorriendo el
+arreglo.
+4. Determine la condición: APROBADO si el promedio es 70 o más; EN RIESGO si es 60 o más,
+pero menor que 70; NO APROBADO si es menor que 60. Guarde la condición en una cadena.
+5. Muestre el nombre, las tres calificaciones, el promedio (dos decimales), la calificación más alta y
+la condición. */
+
+#include <stdio.h>
+#include <string.h>
+
+#define NOTA_MIN 0
+#define nOTA_MAX 100
+
+int main(void){
+    /* Declaracion de variables: */
+    char estudiante[20];
+    double calificaciones[3];
+    double promedio;
+    int i;
+
+    printf("Nombre del estudiante: ");
+    fgets(estudiante, sizeof(estudiante), stdin);
+    estudiante[strcspn(estudiante, "\n")] = '\0';
+
+    for (i = 0; i < 3; i++){
+            do{
+                printf("Clalificacion %d: ", i + 1);
+                scanf("%lf", &calificaciones[i]);
+
+                if(calificaciones[i] < NOTA_MIN && calificaciones[i] > nOTA_MAX){
+                    printf("Calificacion invalida...\n");
+                }
+        
+            } while (calificaciones[i] < NOTA_MIN && calificaciones[i] > nOTA_MAX);
+    }
+
+    promedio = (calificaciones[0], calificaciones[1], calificaciones[2]) / 3;
+
+    if (promedio >= 70 && promedio <= 100){
+        printf("Condicion: APROBADO.");
+    } else if (promedio >= 60 && promedio < 70){
+        printf("Condicion: EN RIESGO.");
+    } else {
+        printf("Condicion: NO APROBADO.");
+    }
+
+    return 0;
+}

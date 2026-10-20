@@ -16,13 +16,13 @@ la condición. */
 
 int main(void){
     /* Declaracion de variables: */
-    char estudiante[20];
+    char estudiante[20], condicion[20];
     double calificaciones[3];
     double promedio;
     int i;
 
 
-    printf("=== Calificaciones del estudiante ===\n")
+    printf("=== Calificaciones del estudiante ===\n");
     printf("Nombre del estudiante: ");
     fgets(estudiante, sizeof(estudiante), stdin);
     estudiante[strcspn(estudiante, "\n")] = '\0';
@@ -42,16 +42,37 @@ int main(void){
     }
 
     /* Se calcula el promedio: */
-    promedio = (calificaciones[0], calificaciones[1], calificaciones[2]) / 3;
+    promedio = (calificaciones[0] + calificaciones[1] + calificaciones[2]) / 3;
+
+
+    /* Salida de datos: */
+    printf("--------- Resultado ---------\n");
+    printf("Estudiante: %17s\n", estudiante);
+    printf("Calificacion 1: \t%.2f\n", calificaciones[0]);
+    printf("Calificacion 2: \t%.2f\n", calificaciones[1]);
+    printf("Calificacion 3: \t%.2f\n", calificaciones[2]);
+    printf("Promedio: \t\t%.2f\n", promedio);
+
+    /* Se valida la calificacion mas alta. */
+    if (calificaciones[0] > calificaciones[1] && calificaciones[0] > calificaciones[2]){
+        printf("Nota mas alta: \t\t%.2f\n", calificaciones[0]);
+    } else if (calificaciones[1] > calificaciones[0] && calificaciones[1] > calificaciones[2]){
+        printf("Nota mas alta: \t\t%.2f\n", calificaciones[1]);
+    } else {
+        printf("Nota mas alta: \t\t%.2f\n", calificaciones[2]);
+    }
 
     /* Se valida la condicion del estudiante. */
     if (promedio >= 70 && promedio <= 100){
-        printf("Condicion: APROBADO.");
+        strcpy(condicion, "APROBADO");
     } else if (promedio >= 60 && promedio < 70){
-        printf("Condicion: EN RIESGO.");
+        strcpy(condicion, "EN RIESGO");
     } else {
-        printf("Condicion: NO APROBADO.");
+       strcpy(condicion, "NO APROBADO");
     }
+
+    printf("Condicion: %19s", condicion);
+
 
     return 0;
 }

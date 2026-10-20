@@ -58,12 +58,12 @@ dos decimales y los montos alineados.
     salario_neto = salario_bruto - desc_caja - desc_iess - renta;
 
     printf("------ COMPROBANTE DE PAGO ------\n");
-    printf("Empledo: \t\t%s\n", nombre);
-    printf("Descuento CAJA (9.5%%): \t%.2f\n", desc_caja);
-    printf("Descuento IESS (2.5%%): \t%.2f\n", desc_iess);
-    printf("Impuesto renta (10%%): \t%.2f\n", renta);
-    printf("Salario neto: \t\t%.2f\n", salario_neto);
-    printf("----------------------------------");
+    printf("Empledo: %24s\n", nombre);
+    printf("Descuento CAJA (9.5%%): %10.2f\n", desc_caja);
+    printf("Descuento IESS (2.5%%): %10.2f\n", desc_iess);
+    printf("Impuesto renta (10%%): %11.2f\n", renta);
+    printf("Salario neto: %19.2f\n", salario_neto);
+    printf("---------------------------------");
 
     
     

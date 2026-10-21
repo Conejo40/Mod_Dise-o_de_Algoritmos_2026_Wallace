@@ -27,7 +27,7 @@
 ## Problema 3 · Compras (AC2_P3_Compras.c)
 
 | Datos de entrada | Proceso | Datos de salida | Limitaciones |
-|---|---|---|---|
+|Productos, precios, cantidades y el nombre del cliente| Almacenar los productos, los precios y las contidades en arreglos y calcular los subtotales y el monto total| cantidad de productos, precios, nombre de los producos y el total.|que los precios sean negativos|
 |  |  |  |  |
 
 **Ejecución con los datos del ejemplo:**

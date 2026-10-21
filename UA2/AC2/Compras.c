@@ -22,7 +22,7 @@ y el total a pagar.
 
 int main(void){
     /* Declaracion de variables: */
-    char nombre[50] 
+    char nombre[50];
     char productos[MAX_PRODUCTOS][ANCHO_NOMBRE];
     double precios[MAX_PRODUCTOS];
     double subtotalProdu, subtotal, totalDescuentos,impuesto, totalPagar;
@@ -75,20 +75,22 @@ int main(void){
 
         /* Se calcula el subtotal del producto */
 
-        subtotalProdu = cantidades * precios;
+        subtotalProdu = cantidades[i] * precios;
 
         subtotal += subtotalProdu;
 
         /* Se le agregan 1 a los contadores */
         totalProductos += 1;
-        i ++
+        i ++;
 
         /* Eliminar saltos de linea: */
-        while (getchar() != "\n")
+        while (getchar() != "\n"){
+            
+        }
 
         /* Agregar productos */
         do{
-            printf("Desea agregar mas productos (S/N): ")
+            printf("Desea agregar mas productos (S/N): ");
             scanf(" %c", respuesta);
         } while (condition);
         

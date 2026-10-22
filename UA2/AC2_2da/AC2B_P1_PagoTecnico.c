@@ -23,7 +23,7 @@ el bruto, el seguro y el neto, con dos decimales y alineados. */
 
 int main(void){
     /* Declaracion de variables: */
-    char nombre[20]; /* se usa para pedir el nombre */
+    char nombre[15]; /* se usa para pedir el nombre */
     int horas, horas_extra; /* horas para pedir y horas_extra para calcular las extras */
     double tarifa_hora, tarifa_extra, salarrio_bruto, salario_neto, pago_ordinario, pago_con_seguro;
     /* Las variables de double se usan para hacer los calculos usados en los datos de salida */

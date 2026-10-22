@@ -73,7 +73,7 @@ int main(void){
     
     /* Se valida si hay horas extra con las constantes: */
     if (horas >= JORNADA){
-        horas_extra = horas - 48;
+        horas_extra = horas - JORNADA;
 
         /* Se calacula el la tarifa si hay horas extra. */
         tarifa_extra = (tarifa_hora * RECARGO) * horas_extra;

@@ -37,7 +37,7 @@ UA2/AC2_2da/
 
 | Datos de entrada | Proceso | Datos de salida | Limitaciones |
 |---|---|---|---|
-|  |  |  |  |
+|nombre completo, horas trabajadas y la tarifa  | Se pide el nombre, las horas y la tarifa hastaque sean corretas, luego se calculan tarifa extra(si la hay), el pago ordinario, el salario bruto, la rebaja del seguro y el salario neto. |nombre del tecnico, pago ordinario, tarifa por horas extra, el salario bruto, rebajo del seguro social y el salario neto.  |Que las horas sean del 1 al 60 o se vuelve a pedir, que el nombre no este vacio o se vuelve a pedir y y que la tarifa sea mayor a 0 o se vuelve perdir.  |
 
 ### Pruebas realizadas
 

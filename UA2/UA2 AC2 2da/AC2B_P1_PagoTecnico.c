@@ -9,7 +9,9 @@ salario neto.
 el bruto, el seguro y el neto, con dos decimales y alineados. */
 
 
-/* ¿Que se logra:  */
+/* ¿Que se logra?: Dar un comprobante de pago a un tecnico.  */
+/* ¿como se logra?: Pidiendo datos hasta que sean correctos y luego hacer los calculos necesarios. */
+/* Resultado esperado: Que la salida se igual a la propuesta por el docente. */
 
 #include <stdio.h>
 #include <string.h>
@@ -93,6 +95,7 @@ int main(void){
 
 /* ------------------------------------------------------------------------------------------------ */
 
+    /* Salida de datos: */
     printf("--------- Comprobante semanal ---------\n");
     printf("Tecnico: %25s\n", nombre);
     printf("Horas ordinarias (48 h): %14.2f\n", pago_ordinario);

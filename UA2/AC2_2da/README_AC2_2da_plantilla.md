@@ -45,7 +45,7 @@ UA2/AC2_2da/
 |---|---|---|---|
 | Ejemplo del enunciado | Jose Mora, 52, 2500 | mostro los datos correctos del pdf. | SI |
 | Caso límite | (por ejemplo, exactamente 48 horas) | En este caso no hubo horas extra asi que los resultados de los calculos fueron diferentes pero, no erroneos. | Segun lo esperado |
-| Dato inválido | (por ejemplo, nombre vacío, 0 horas o 61 horas) |Pidio de nuevo los valoeres hasta que fueran los correctos.| | Segun lo esperado |
+| Dato inválido | (por ejemplo, nombre vacío, 0 horas o 61 horas) |Pidio de nuevo los valores hasta que fueran los correctos.| | Segun lo esperado |
 | Se hicieron estas pruebas para probar que el codigo funcionara de la manera correcta. |  |
 
 ### Ejecución con los datos del ejemplo

@@ -16,14 +16,14 @@ el bruto, el seguro y el neto, con dos decimales y alineados. */
 
 #define JORNADA 48
 #define MAXIMO_HORAS 60
-#define RECARGO 
-#define SEGURO
+#define RECARGO 1.5
+#define SEGURO 0.105
 
 int main(void){
     /* Declaracion de variables: */
     char nombre[20];
-    int horas;
-    double tarifa_hora;
+    int horas, horas_extra;
+    double tarifa_hora, tarifa_extra, salarrio_bruto, salario_neto, pago_ordinario, pago_con_seguro;
 
 /* ------------------------------------------------------------------------------------------------ */
 
@@ -69,7 +69,38 @@ int main(void){
 
 /* ------------------------------------------------------------------------------------------------ */
     
-    
+    /* Se valida si hay horas extra con las constantes: */
+    if (horas >= JORNADA){
+        horas_extra = horas - 48;
+
+        /* Se calacula el la tarifa si hay horas extra. */
+        tarifa_extra = (tarifa_hora * RECARGO) * horas_extra;
+    } else {
+        horas_extra = 0;
+    }
+
+/* ------------------------------------------------------------------------------------------------ */
+    /* Calculos: */
+
+    /* Se calcula el salario normal: */
+    pago_ordinario = JORNADA * tarifa_hora;
+    /* Se calcula el salario bruto: */
+    salarrio_bruto = pago_ordinario + tarifa_extra;
+    /* Se Calcula la rebaja del seguro, para esto usamos el salario bruto no el salario ordinario. */
+    pago_con_seguro = salarrio_bruto * SEGURO;
+    /* Se calcula el salario neto: */
+    salario_neto = salarrio_bruto - pago_con_seguro;
+
+/* ------------------------------------------------------------------------------------------------ */
+
+    printf("--------- Comprobante semanal ---------\n");
+    printf("Tecnico: %25s\n", nombre);
+    printf("Horas ordinarias (48 h): %14.2f\n", pago_ordinario);
+    printf("Horas extra ( 4 h): %19.2f\n", tarifa_extra);
+    printf("Salario bruto: %24.2f\n", salarrio_bruto);
+    printf("Seguro social (10.5%%): %16.2f\n", pago_con_seguro);
+    printf("Salario neto: %25.2f\n", salario_neto);
+
 
     return 0;
 }

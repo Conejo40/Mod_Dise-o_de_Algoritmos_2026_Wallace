@@ -15,6 +15,7 @@ dos decimales y los montos alineados.
  #define CAJA 0.095
  #define IESS 0.025
  #define IMPUESTO_RENTA 0.10
+ #define LIMITE_IMPUESTO 800 /* Error 12: se crea constante para el limite corregido. */
 
  int main(void){
     /* Declaracion de variables: */
@@ -39,13 +40,13 @@ dos decimales y los montos alineados.
         printf("Digite salario bruto: ");
         scanf("%lf", &salario_bruto);
 
-        if (salario_bruto < 0){
+        if (salario_bruto <= 0){    /* Error 11: de salario_bruto < 0 corregido. */
             printf("Valor invalido...\n");
         }
-    } while (salario_bruto < 0);
+    } while (salario_bruto <= 0);   /* Error 11: de salario_bruto < 0 corregido. */
 
     /* Se cumple si el salario bruto es de 800 o mas. */
-    if (salario_bruto >= 800){
+    if (salario_bruto >  LIMITE_IMPUESTO){   /* Error 12: se cambia 800 por constante y el >= queda >*/
         renta = salario_bruto * IMPUESTO_RENTA;
     } else {
         renta = 0;
@@ -58,7 +59,8 @@ dos decimales y los montos alineados.
     salario_neto = salario_bruto - desc_caja - desc_iess - renta;
 
     printf("------ COMPROBANTE DE PAGO ------\n");
-    printf("Empledo: %24s\n", nombre);
+    printf("Empleado: %24s\n", nombre);         /* Se corrige el error de ortografia. */
+    printf("Salario bruto: %18.2f\n", salario_bruto);   /* Error 10: se agrega el printf con el salario bruto. */
     printf("Descuento CAJA (9.5%%): %10.2f\n", desc_caja);
     printf("Descuento IESS (2.5%%): %10.2f\n", desc_iess);
     printf("Impuesto renta (10%%): %11.2f\n", renta);

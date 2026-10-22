@@ -12,7 +12,7 @@ la condición. */
 #include <string.h>
 
 #define NOTA_MIN 0
-#define nOTA_MAX 100
+#define NOTA_MAX 100  /* Error de nota coregido. */
 
 int main(void){
     /* Declaracion de variables: */
@@ -34,11 +34,11 @@ int main(void){
                 printf("Clalificacion %d: ", i + 1);
                 scanf("%lf", &calificaciones[i]);
 
-                if(calificaciones[i] < NOTA_MIN || calificaciones[i] > nOTA_MAX){
+                if(calificaciones[i] < NOTA_MIN || calificaciones[i] > NOTA_MAX){
                     printf("Calificacion invalida...\n");
                 }
         
-            } while (calificaciones[i] < NOTA_MIN || calificaciones[i] > nOTA_MAX);
+            } while (calificaciones[i] < NOTA_MIN || calificaciones[i] > NOTA_MAX);
     }
 
     /* Se calcula el promedio: */

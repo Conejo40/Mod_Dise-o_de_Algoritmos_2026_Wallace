@@ -49,7 +49,7 @@ UA2/AC2_2da/
 
 ### Ejecución con los datos del ejemplo
 
-![Ejecución del problema 1](/UA2/AC2_2da/PagoTecnico_Evi.png)
+![Ejecución del problema 1](/UA2/AC2_2da/recursos/PagoTecnico_Evi.png)
 
 ---
 
@@ -101,21 +101,21 @@ UA2/AC2_2da/
 
 Marque cada punto cambiando `[ ]` por `[x]`.
 
-- [ ] Resolví 2 problemas y los anoté en «Problemas elegidos».
-- [ ] Cada programa compila con `gcc -Wall -Wextra` **sin errores y sin advertencias**.
-- [ ] Probé cada programa con el ejemplo, con un caso límite y con un dato inválido.
-- [ ] La validación compara **el dato leído**, no el contador del ciclo.
-- [ ] Cada límite y cada tasa del enunciado es una **constante** (`#define`).
-- [ ] Cada cadena tiene espacio para todas sus letras **más el `'\0'`**.
-- [ ] Cada programa empieza con comentarios: enunciado, qué se logra, cómo se logra y resultado esperado.
-- [ ] Cada variable y constante tiene un comentario que explica para qué se usa.
-- [ ] Los archivos tienen los nombres pedidos y el README está dentro de `UA2/AC2_2da`.
-- [ ] Las capturas se ven en GitHub (están en `recursos/` con los nombres de esta plantilla).
-- [ ] Hice commits durante la actividad y un push al final.
-- [ ] Comprimí la carpeta como `Proyecto02_PrimerNombre_PrimerApellido.zip`.
+- [x] Resolví 2 problemas y los anoté en «Problemas elegidos».
+- [x] Cada programa compila con `gcc -Wall -Wextra` **sin errores y sin advertencias**.
+- [x] Probé cada programa con el ejemplo, con un caso límite y con un dato inválido.
+- [x] La validación compara **el dato leído**, no el contador del ciclo.
+- [x] Cada límite y cada tasa del enunciado es una **constante** (`#define`).
+- [x] Cada cadena tiene espacio para todas sus letras **más el `'\0'`**.
+- [x] Cada programa empieza con comentarios: enunciado, qué se logra, cómo se logra y resultado esperado.
+- [x] Cada variable y constante tiene un comentario que explica para qué se usa.
+- [x] Los archivos tienen los nombres pedidos y el README está dentro de `UA2/AC2_2da`.
+- [x] Las capturas se ven en GitHub (están en `recursos/` con los nombres de esta plantilla).
+- [x] Hice commits durante la actividad y un push al final.
+- [x] Comprimí la carpeta como `Proyecto02_PrimerNombre_PrimerApellido.zip`.
 
 ## Conclusión
 
-**Qué corregí con respecto a la 1.ª oportunidad:** (escriba al menos dos aspectos concretos)
+**Qué corregí con respecto a la 1.ª oportunidad:** (escriba al menos dos aspectos concretos) El uso de constantes para los limites dichas por el documento, un trabajo mas limpio y bien comentado.
 
-**Qué fue lo más difícil y cómo lo resolví:**
+**Qué fue lo más difícil y cómo lo resolví:** Sin duda la parte matematica es lo mas complicado y como lo resolvi;con la ayuda de la calculadora de que esta por defecto en la compu, con calma y probando lo resolvi.

@@ -16,16 +16,17 @@ el bruto, el seguro y el neto, con dos decimales y alineados. */
 #include <stdio.h>
 #include <string.h>
 
-#define JORNADA 48
-#define MAXIMO_HORAS 60
-#define RECARGO 1.5
-#define SEGURO 0.105
+#define JORNADA 48 /* limite y la use para el calculo */
+#define MAXIMO_HORAS 60 /* Limite para pedir las horas */
+#define RECARGO 1.5  /* La use para calcular la tarifa por horas extra */
+#define SEGURO 0.105 /* La use para calcular la rebaja del seguro */
 
 int main(void){
     /* Declaracion de variables: */
-    char nombre[20];
-    int horas, horas_extra;
+    char nombre[20]; /* se usa para pedir el nombre */
+    int horas, horas_extra; /* horas para pedir y horas_extra para calcular las extras */
     double tarifa_hora, tarifa_extra, salarrio_bruto, salario_neto, pago_ordinario, pago_con_seguro;
+    /* Las variables de double se usan para hacer los calculos usados en los datos de salida */
 
 /* ------------------------------------------------------------------------------------------------ */
 

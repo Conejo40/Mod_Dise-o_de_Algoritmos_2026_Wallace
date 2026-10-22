@@ -13,12 +13,15 @@ la condición. */
 
 #define NOTA_MIN 0
 #define NOTA_MAX 100  /* Error de nota coregido. */
+#define APROBADO 70
+#define RIESGO 60
 
 int main(void){
     /* Declaracion de variables: */
     char estudiante[20], condicion[20];
     double calificaciones[3];
     double promedio;
+    double nota_mayor = 0;
     int i;
 
 
@@ -44,6 +47,13 @@ int main(void){
     /* Se calcula el promedio: */
     promedio = (calificaciones[0] + calificaciones[1] + calificaciones[2]) / 3;
 
+    /* Error numero 13: cambiar el if por un for y agregar una variable nota_mayor. */
+   for (i = 0; i < 3; i++){
+        if (calificaciones[i] > nota_mayor){
+            nota_mayor = calificaciones[i];
+        }
+   }
+    
 
     /* Salida de datos: */
     printf("--------- Resultado ---------\n");
@@ -51,21 +61,15 @@ int main(void){
     printf("Calificacion 1: \t%.2f\n", calificaciones[0]);
     printf("Calificacion 2: \t%.2f\n", calificaciones[1]);
     printf("Calificacion 3: \t%.2f\n", calificaciones[2]);
+    printf("Nota mas alta: \t\t%.2f\n", nota_mayor);
     printf("Promedio: \t\t%.2f\n", promedio);
 
-    /* Se valida la calificacion mas alta. */
-    if (calificaciones[0] > calificaciones[1] && calificaciones[0] > calificaciones[2]){
-        printf("Nota mas alta: \t\t%.2f\n", calificaciones[0]);
-    } else if (calificaciones[1] > calificaciones[0] && calificaciones[1] > calificaciones[2]){
-        printf("Nota mas alta: \t\t%.2f\n", calificaciones[1]);
-    } else {
-        printf("Nota mas alta: \t\t%.2f\n", calificaciones[2]);
-    }
 
+   /* Se corrige el Error 9: se cambian datos por constantes (limites) */
     /* Se valida la condicion del estudiante. */
-    if (promedio >= 70 && promedio <= 100){
+    if (promedio >= APROBADO && promedio <= 100){
         strcpy(condicion, "APROBADO");
-    } else if (promedio >= 60 && promedio < 70){
+    } else if (promedio >= RIESGO && promedio < APROBADO){
         strcpy(condicion, "EN RIESGO");
     } else {
        strcpy(condicion, "NO APROBADO");

@@ -45,11 +45,12 @@ UA2/AC2_2da/
 |---|---|---|---|
 | Ejemplo del enunciado | Jose Mora, 52, 2500 |  |  |
 | Caso límite | (por ejemplo, exactamente 48 horas) |  |  |
-| Dato inválido | (por ejemplo, nombre vacío, 0 horas o 61 horas) |  |  |
+| Dato inválido | (por ejemplo, nombre vacío, 0 horas o 61 horas) 
+| Se hicieron estas pruebas para probar que el codigo funcionara de la manera correcta. |  |
 
 ### Ejecución con los datos del ejemplo
 
-![Ejecución del problema 1](recursos/captura_p1.png)
+![Ejecución del problema 1](/UA2/UA2%20AC2%202da/PagoTecnico_Evi.png)
 
 ---
 

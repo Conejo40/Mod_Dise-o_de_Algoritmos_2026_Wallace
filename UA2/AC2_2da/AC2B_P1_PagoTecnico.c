@@ -72,7 +72,7 @@ int main(void){
 /* ------------------------------------------------------------------------------------------------ */
     
     /* Se valida si hay horas extra con las constantes: */
-    if (horas >= JORNADA){
+    if (horas > JORNADA){
         horas_extra = horas - JORNADA;
 
         /* Se calacula el la tarifa si hay horas extra. */

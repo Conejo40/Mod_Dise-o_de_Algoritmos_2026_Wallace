@@ -19,7 +19,7 @@ int main(void){
     int horas[EST][DIAS];
 
     /* Arreglo de cadenas: Con los nombres cortos de los dias */
-    char dias[DIAS][4] = {"Lun", "Mar", "Mier", "Jue"};
+    char dias[DIAS][4] = {"Lun", "Mar", "Mie", "Jue"};
     /* Se crean los indices para columnas: */
     int e;
     int d;
@@ -59,7 +59,7 @@ int main(void){
             /* Pedir horas del dia. */
             printf("Horas del dia: %s", dias[d]);
             /* Leer un entero en la celda */
-            scanf("%d", horas[e][d]);
+            scanf("%d", &horas[e][d]);
         }
     }
 

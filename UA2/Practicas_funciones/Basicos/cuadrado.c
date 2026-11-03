@@ -2,6 +2,7 @@
 
 #include <stdio.h>
 
+/* Declaracion de la funcion */
 int alCuadrado(int num);
 
 int main(void){
@@ -18,6 +19,7 @@ int main(void){
     return 0;
 }
 
+/* Definicion de la funcion: */
 int alCuadrado(int num){
     /* num *= num; */
 

@@ -4,6 +4,15 @@
 
 int buscar(const char nombres[][15], int n, const char buscado[]) {
     int i;
+
+    /* Error de logica 
+    
+    POR QUE: hay un desbordamiento de datos ya que da una vuelta de mas y los arreglos se leen
+    hasta -1 porque el ultimo espacio esta reservado para \0, para esto use un contador que me 
+    diga las vueltas y me dio 5 vueltas en total.
+    
+    CORRECCION: cambiar i <= n por i < n para que no ocurra ese desborde y agregar llaves en el for 
+    y el if*/
     for (i = 0; i < n; i++)
         /* ERROR: error de logica.
         
@@ -15,7 +24,8 @@ int buscar(const char nombres[][15], int n, const char buscado[]) {
         y 0 si son iguales */
         if (strcmp(nombres[i], buscado) == 0)
             return i;
-    return -1;
+
+     return -1;        
 }
 
 int main(void) {

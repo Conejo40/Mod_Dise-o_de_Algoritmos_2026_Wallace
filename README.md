@@ -106,18 +106,18 @@ Las capturas de pantalla van en la subcarpeta `capturas/` de cada sesión
 <details open>
 <summary><b>Unidad 2 · Programación estructurada en C</b> (sesiones 14 a 24)</summary>
 
-| Sesión  | Tema                                         | Qué aprendí |                  Evidencia                   | Estado |
-| :-----: | :------------------------------------------- | :---------- | :------------------------------------------: | :----: |
-|   S14   | Sistemas numéricos                           | Apredí a usar sistemas numericos en C.|     [ver](UA2/S14/Evi/S14.png)     |   ⬜   |
-|   S15   | Control de versiones con git y GitHub        | Aprendí a como hacer conversiones del sistema binario, decimal, octal y hexadecimal.|               [ver](UA2/S15/Evi/S15.png)                |   ⬜   |
-|   S16   | Formato de un programa en C y compilación    | Aprendí a utilizar el formato gcc para compilar archivos C.|               [ver](UA2/S16/Evi/S16.png)                |   ⬜   |
-|   S17   | Variables, constantes y entrada/salida       | Aprendí a usar los tipos de variables, su peso, cuando usarlas, a jugar con espacios y decimales y aprendí definir constantes.|               [ver](UA2/S17/Evi/S17.png)                |   ⬜   |
-|   S18   | Operadores, casting e if … else              | Aprendí a usar los condicionales if, elif y else, los operadores y comparadores, tambien el uso del casting.|               [ver](UA2/S18/Evi/S18.png)                |   ⬜   |
-|   S19   | Ciclos y switch                              | Aprendí a utilizar los ciclos for, while y do while, tambien el switch case para cuando tenemos opciones.|               [ver](UA2/S19/Evi/S19.png)                |   ⬜   |
-|   S20   | Arreglos, matrices y cadenas                 | Aprendí hacer arreglos de datos y sus funciones y a recorrer matrices con for anidados ademas de las practicas que hicimos para repasar.|               [ver](/UA2/S20/Evi/S20.png)        |   ⬜   |
-|   S21   | Funciones                                    |             |               [ver](UA2/S21/)                |   ⬜   |
-|   S22   | Paso de parámetros por valor y por dirección |             |               [ver](UA2/S22/)                |   ⬜   |
-| S23–S24 | **Actividad de comprobación 2**              |             | [ver](actividades/A2_Mi_primera_aplicacion/) |   ⬜   |
+| Sesión  | Tema                                         | Qué aprendí                                                                                                                              |                  Evidencia                   | Estado |
+| :-----: | :------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------: | :----: |
+|   S14   | Sistemas numéricos                           | Apredí a usar sistemas numericos en C.                                                                                                   |          [ver](UA2/S14/Evi/S14.png)          |   ⬜   |
+|   S15   | Control de versiones con git y GitHub        | Aprendí a como hacer conversiones del sistema binario, decimal, octal y hexadecimal.                                                     |          [ver](UA2/S15/Evi/S15.png)          |   ⬜   |
+|   S16   | Formato de un programa en C y compilación    | Aprendí a utilizar el formato gcc para compilar archivos C.                                                                              |          [ver](UA2/S16/Evi/S16.png)          |   ⬜   |
+|   S17   | Variables, constantes y entrada/salida       | Aprendí a usar los tipos de variables, su peso, cuando usarlas, a jugar con espacios y decimales y aprendí definir constantes.           |          [ver](UA2/S17/Evi/S17.png)          |   ⬜   |
+|   S18   | Operadores, casting e if … else              | Aprendí a usar los condicionales if, elif y else, los operadores y comparadores, tambien el uso del casting.                             |          [ver](UA2/S18/Evi/S18.png)          |   ⬜   |
+|   S19   | Ciclos y switch                              | Aprendí a utilizar los ciclos for, while y do while, tambien el switch case para cuando tenemos opciones.                                |          [ver](UA2/S19/Evi/S19.png)          |   ⬜   |
+|   S20   | Arreglos, matrices y cadenas                 | Aprendí hacer arreglos de datos y sus funciones y a recorrer matrices con for anidados ademas de las practicas que hicimos para repasar. |         [ver](/UA2/S20/Evi/S20.png)          |   ⬜   |
+|   S21   | Funciones                                    | Aprendí la teoria de las funciones, como definirlas, lo que es una funcion void y los retornos.                                          |          [ver](UA2/S21/Evi/S21.png)          |   ⬜   |
+|   S22   | Paso de parámetros por valor y por dirección |                                                                                                                                          |               [ver](UA2/S22/)                |   ⬜   |
+| S23–S24 | **Actividad de comprobación 2**              |                                                                                                                                          | [ver](actividades/A2_Mi_primera_aplicacion/) |   ⬜   |
 
 </details>
 

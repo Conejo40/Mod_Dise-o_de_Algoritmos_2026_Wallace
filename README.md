@@ -116,7 +116,7 @@ Las capturas de pantalla van en la subcarpeta `capturas/` de cada sesión
 |   S19   | Ciclos y switch                              | Aprendí a utilizar los ciclos for, while y do while, tambien el switch case para cuando tenemos opciones.                                |          [ver](UA2/S19/Evi/S19.png)          |   ⬜   |
 |   S20   | Arreglos, matrices y cadenas                 | Aprendí hacer arreglos de datos y sus funciones y a recorrer matrices con for anidados ademas de las practicas que hicimos para repasar. |         [ver](/UA2/S20/Evi/S20.png)          |   ⬜   |
 |   S21   | Funciones                                    | Aprendí la teoria de las funciones, como definirlas, lo que es una funcion void y los retornos.                                          |          [ver](UA2/S21/Evi/S21.png)          |   ⬜   |
-|   S22   | Paso de parámetros por valor y por dirección |                                                                                                                                          |               [ver](UA2/S22/)                |   ⬜   |
+|   S22   | Paso de parámetros por valor y por dirección | Aprendí a declarar funciones con parametros y pasarle argumento, ademas aprendi el uso de los punteros y su teoria.                      |          [ver](UA2/S22/Evi/S22.png)          |   ⬜   |
 | S23–S24 | **Actividad de comprobación 2**              |                                                                                                                                          | [ver](actividades/A2_Mi_primera_aplicacion/) |   ⬜   |
 
 </details>
